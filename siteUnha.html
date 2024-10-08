@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/unhas.css">
+    <title>Agendamento de Unhas</title>
+</head>
+<body>
+    <h1>Agende seu horário para unhas</h1>
+    <form id="appointmentForm" action="processa_agendamento.php" method="post">
+        <label for="name">Nome da Cliente:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Horário:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="service">Aplicação de Unha:</label>
+        <select id="service" name="service" required>
+            <option value="">Selecione</option>
+            <option value="Esmalte Gel">Esmalte Gel</option>
+            <option value="Unha Acrílica">Unha Acrílica</option>
+            <option value="Fibra de Vidro">Fibra de Vidro</option>
+            <option value="Molde F1">Molde F1</option>
+            <option value="Gel na Tips">Gel na Tips</option>
+        </select>
+        
+        <button type="submit">Agendar</button>
+    </form>
+
+    <h2>Agendamentos:</h2>
+    <ul id="appointmentsList"></ul>
+
+    <h1>Galeria de Trabalhos</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/unhas1.jpg" alt="Esmaltação em gel">
+            <div>esmaltação em gel</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/unhas2.jpg" alt="Molde F1">
+            <div>molde f1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/unhas3.jpg" alt="Fibra de vidro">
+            <div>fibra de vidro</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/unhas4.jpg" alt="Gel na Tips">
+            <div>gel na tips</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/unhas5.jpg" alt="Unha Acrílica">
+            <div>unha Acrílica</div>
+        </div>
+    </div>
+
+    <script src="js/unhas.js"></script>
+</body>
+</html>
