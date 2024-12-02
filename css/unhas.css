@@ -56,8 +56,8 @@ h1 {
 }
 
 .gallery-item {
-    border: 2px solid #000000;
-    border-radius: 3px;
+    border: 0px solid #000000;
+    border-radius: 0px;
     overflow: hidden;
     background-color: #dea0a0;
     transition: transform 0.2s;
@@ -68,7 +68,7 @@ h1 {
 }
 
 .gallery img {
-    max-width: 10%;
+    max-width: 20%;
     height: auto;
     display: block;
 }
