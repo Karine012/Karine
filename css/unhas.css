@@ -64,7 +64,7 @@ h1 {
 }
 
 .gallery-item:hover {
-    transform: scale(0.15);
+    transform: scale(1.5);
 }
 
 .gallery img {
