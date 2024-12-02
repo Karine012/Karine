@@ -57,14 +57,14 @@ h1 {
 
 .gallery-item {
     border: 2px solid #000000;
-    border-radius: 2px;
+    border-radius: 0px;
     overflow: hidden;
     background-color: #dea0a0;
     transition: transform 0.2s;
 }
 
 .gallery-item:hover {
-    transform: scale(1.05);
+    transform: scale(0.25);
 }
 
 .gallery img {
